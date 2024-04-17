@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@ethersproject/bignumber": "^5.7.0",
+    "axios": "^1.6.8",
+    "ethers": "^6.12.0"
+  }
+}

@@ -1,0 +1,71 @@
+[
+    {
+        "type": "constructor",
+        "payable": false,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "_swapRouter"
+            },
+            {
+                "type": "address",
+                "name": "wethAddress"
+            },
+            {
+                "type": "address",
+                "name": "linkAddress"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "poolFee",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "gas": 29000000,
+        "inputs": [],
+        "outputs": [
+            {
+                "type": "uint24"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "swapExactInputSingle",
+        "constant": false,
+        "payable": false,
+        "gas": 29000000,
+        "inputs": [
+            {
+                "type": "uint256",
+                "name": "amountIn"
+            },
+            {
+                "type": "uint256",
+                "name": "minAmount"
+            }
+        ],
+        "outputs": [
+            {
+                "type": "uint256",
+                "name": "amountOut"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "swapRouter",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "gas": 29000000,
+        "inputs": [],
+        "outputs": [
+            {
+                "type": "address"
+            }
+        ]
+    }
+]

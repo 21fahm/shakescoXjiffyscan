@@ -1,0 +1,57 @@
+[
+    {
+        "type": "function",
+        "name": "deposit",
+        "constant": false,
+        "payable": true,
+        "gas": 29000000,
+        "inputs": [],
+        "outputs": []
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "spender",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+            }
+        ],
+        "name": "approve",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "type": "function",
+        "name": "swap",
+        "constant": false,
+        "payable": false,
+        "gas": 29000000,
+        "inputs": [
+            {
+                "type": "uint256",
+                "name": "amount"
+            },
+            {
+                "type": "address",
+                "name": "source"
+            },
+            {
+                "type": "address",
+                "name": "target"
+            }
+        ],
+        "outputs": []
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "type": "constructor",
+        "payable": false,
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "name": "autoPaymentImplementation",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "gas": 29000000,
+        "inputs": [],
+        "outputs": [
+            {
+                "type": "address"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "computeAddress",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "gas": 29000000,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "accountAddress"
+            },
+            {
+                "type": "uint256",
+                "name": "salt"
+            }
+        ],
+        "outputs": [
+            {
+                "type": "address"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "deployWallet",
+        "constant": false,
+        "payable": false,
+        "gas": 29000000,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "accountAddress"
+            },
+            {
+                "type": "uint256",
+                "name": "salt"
+            }
+        ],
+        "outputs": [
+            {
+                "type": "address"
+            }
+        ]
+    }
+]

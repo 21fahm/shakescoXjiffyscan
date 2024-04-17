@@ -1,0 +1,205 @@
+[
+    {
+        "type": "constructor",
+        "payable": false,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "linkAddress"
+            },
+            {
+                "type": "address",
+                "name": "registry"
+            },
+            {
+                "type": "address",
+                "name": "registrar"
+            },
+            {
+                "type": "address",
+                "name": "shakesco"
+            }
+        ]
+    },
+    {
+        "type": "error",
+        "name": "REGISTERAUTOMATION__NOTOWNER",
+        "inputs": []
+    },
+    {
+        "type": "error",
+        "name": "REGISTERAUTOMATION__NOTSHAKESCOUSER",
+        "inputs": []
+    },
+    {
+        "type": "function",
+        "name": "cancelId",
+        "constant": false,
+        "payable": false,
+        "gas": 29000000,
+        "inputs": [
+            {
+                "type": "uint256",
+                "name": "id"
+            }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "changeAdmin",
+        "constant": false,
+        "payable": false,
+        "gas": 29000000,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "proposed"
+            },
+            {
+                "type": "uint256",
+                "name": "id"
+            }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "changeRegistrar",
+        "constant": false,
+        "payable": false,
+        "gas": 29000000,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "registrar"
+            }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "changeRegistry",
+        "constant": false,
+        "payable": false,
+        "gas": 29000000,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "registry"
+            }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "editGasLimit",
+        "constant": false,
+        "payable": false,
+        "gas": 29000000,
+        "inputs": [
+            {
+                "type": "uint256",
+                "name": "id"
+            },
+            {
+                "type": "uint32",
+                "name": "gasLimit"
+            }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "fundIds",
+        "constant": false,
+        "payable": false,
+        "gas": 29000000,
+        "inputs": [],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "pauseId",
+        "constant": false,
+        "payable": false,
+        "gas": 29000000,
+        "inputs": [
+            {
+                "type": "uint256",
+                "name": "id"
+            }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "register",
+        "constant": false,
+        "payable": false,
+        "gas": 29000000,
+        "inputs": [
+            {
+                "type": "tuple",
+                "name": "requestParams",
+                "components": [
+                    {
+                        "type": "string",
+                        "name": "name"
+                    },
+                    {
+                        "type": "bytes",
+                        "name": "encryptedEmail"
+                    },
+                    {
+                        "type": "address",
+                        "name": "upkeepContract"
+                    },
+                    {
+                        "type": "uint32",
+                        "name": "gasLimit"
+                    },
+                    {
+                        "type": "address",
+                        "name": "adminAddress"
+                    },
+                    {
+                        "type": "uint8",
+                        "name": "triggerType"
+                    },
+                    {
+                        "type": "bytes",
+                        "name": "checkData"
+                    },
+                    {
+                        "type": "bytes",
+                        "name": "triggerConfig"
+                    },
+                    {
+                        "type": "bytes",
+                        "name": "offchainConfig"
+                    },
+                    {
+                        "type": "uint96",
+                        "name": "amount"
+                    }
+                ]
+            }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "unPauseId",
+        "constant": false,
+        "payable": false,
+        "gas": 29000000,
+        "inputs": [
+            {
+                "type": "uint256",
+                "name": "id"
+            }
+        ],
+        "outputs": []
+    }
+]
